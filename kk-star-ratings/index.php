@@ -10,7 +10,7 @@
  * Author URI:      https://feedbackwp.com
  * Text Domain:     kk-star-ratings
  * Domain Path:     /languages
- * Version:         5.4.8
+ * Version:         5.4.9
  * License:         GPLv2 or later
  */
 
@@ -28,7 +28,7 @@ add_action( 'admin_menu', function () {
     $submenu[ 'kk-star-ratings' ][] = [
         '<span style="color: #fff;display:block;background-color:#d63638;padding:4px 0 4px 4px;width: 100%;">' . esc_html__( 'Upgrade to Pro', 'kk-star-ratings' ) . '</span>',
         'manage_options',
-        'https://feedbackwp.com/pricing/?utm_source=liteplugin&utm_medium=menu-link&utm_campaign=menu-upsell'
+        'https://feedbackwp.com/pricing/?utm_source=liteplugin&utm_medium=menu-link&utm_campaign=kk-menu-upsell'
     ];
 }, 99 );
 
@@ -38,7 +38,7 @@ $prefix   = is_network_admin() ? 'network_admin_' : '';
 add_filter("{$prefix}plugin_action_links_$basename", function($actions, $plugin_file, $plugin_data, $context)
 {
     $custom_actions['kksr_upgrade'] = sprintf(
-        '<a style="color:#d54e21;font-weight:bold" href="%s" target="_blank">%s</a>', 'https://feedbackwp.com/pricing/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=action_link',
+        '<a style="color:#d54e21;font-weight:bold" href="%s" target="_blank">%s</a>', 'https://feedbackwp.com/pricing/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=kk-action_link',
         __('Go Premium', 'kk-star-ratings')
     );
 
@@ -68,12 +68,14 @@ require_once __DIR__ . '/lib/Installer/KKStar_Install_Skin.php';
 
 require_once __DIR__ . '/lib/FuseWP.php';
 require_once __DIR__ . '/lib/ProfilePress.php';
+require_once __DIR__ . '/lib/Shogun.php';
 
 define('KK_STAR_ASSETS_URL', plugin_dir_url(KK_STAR_RATINGS) . 'lib/');
 
 add_action('init', function() {
     KKSTAR_FuseWP::get_instance();
     KKSTAR_ProfilePress::get_instance();
+    ProperP_Shogun::get_instance();
 }, 999);
 
 if (function_exists('kksr_freemius')) {

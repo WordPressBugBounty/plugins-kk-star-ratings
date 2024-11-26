@@ -4,7 +4,7 @@ if ( ! defined('KK_STAR_RATINGS')) {
     exit();
 }
 
-$upgrade_url = 'https://feedbackwp.com/upgrading-from-kk-star-ratings/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=sidebar_upsell';
+$upgrade_url = 'https://feedbackwp.com/upgrading-from-kk-star-ratings/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=kk-sidebar_upsell';
 ?>
 
 <div class="wrap">
@@ -84,7 +84,7 @@ $upgrade_url = 'https://feedbackwp.com/upgrading-from-kk-star-ratings/?utm_sourc
                                 <li>Advanced schema builder</li>
                                 <li>Create custom rating widgets</li>
                             </ul>
-                            <a href="https://feedbackwp.com/pricing/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=sidebar_upsell" target="__blank" class="button-primary">Get FeedbackWP →</a>
+                            <a href="https://feedbackwp.com/pricing/?utm_source=wp_dashboard&utm_medium=upgrade&utm_campaign=kk-sidebar_upsell" target="__blank" class="button-primary">Get FeedbackWP →</a>
                         </div>
                         <!-- .inside -->
 
