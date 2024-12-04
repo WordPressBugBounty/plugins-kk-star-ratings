@@ -6,24 +6,13 @@ Tags: star ratings, voting, rate post, ajax ratings, feedback
 Requires at least: 5.0
 Requires PHP: 7.4
 Tested up to: 6.7
-Stable tag: 5.4.9
+Stable tag: 5.4.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-
-
 kk Star Ratings allows blog visitors to involve and interact more effectively with your website by rating posts.
 
-The feedbacks gotten can help you better understand the posts users consider valuable.
-
-
-
-
 == Description ==
-
-
-
 
 kk Star Ratings is a widely used star rating plugin for wordpress. Here are some highlighted features:
 
@@ -105,6 +94,9 @@ The source of this plugin is located at [Github](https://github.com/kamalkhan/kk
 
 
 == Changelog ==
+
+= 5.4.10 =
+* Fixed security issue where any shortcode could be parsed.
 
 = 5.4.9 =
 * Upgraded Freemius SDK.
