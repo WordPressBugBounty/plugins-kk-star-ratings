@@ -89,6 +89,10 @@ function wp_ajax_kk_star_ratings()
             $payload['legend'] = strip_shortcodes($payload['legend']);
         }
 
+        if(isset($payload['_legend'])) {
+            $payload['_legend'] = strip_shortcodes($payload['_legend']);
+        }
+
         $html = trim(do_shortcode(to_shortcode(kksr('slug'), $payload)));
 
         wp_die($html, 201);

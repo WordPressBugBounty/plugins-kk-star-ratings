@@ -48,6 +48,9 @@ function response(array $payload): string
 
     $payload['font_factor'] = 1.25;
 
+    $payload['legend'] = strip_shortcodes($payload['legend']);
+    if (isset($payload['_legend'])) $payload['_legend'] = strip_shortcodes($payload['_legend']);
+
     ob_start();
 
     action('markup', $payload);

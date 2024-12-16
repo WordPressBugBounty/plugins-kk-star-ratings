@@ -6,7 +6,7 @@ Tags: star ratings, voting, rate post, ajax ratings, feedback
 Requires at least: 5.0
 Requires PHP: 7.4
 Tested up to: 6.7
-Stable tag: 5.4.10
+Stable tag: 5.4.10.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,6 +94,9 @@ The source of this plugin is located at [Github](https://github.com/kamalkhan/kk
 
 
 == Changelog ==
+
+= 5.4.10.1 =
+* Fixed security issue where any shortcode could be parsed.
 
 = 5.4.10 =
 * Fixed security issue where any shortcode could be parsed.
