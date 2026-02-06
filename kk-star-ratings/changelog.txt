@@ -1,5 +1,8 @@
 ﻿== Changelog ==
 
+= 5.4.10.3 =
+* Upgraded freemiums SDK
+
 = 5.4.10.2 =
 * Fixed security issue where any shortcode could be parsed.
 

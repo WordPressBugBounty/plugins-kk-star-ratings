@@ -5,8 +5,8 @@ Donate link: https://feedbackwp.com/
 Tags: star ratings, voting, rate post, ajax ratings, feedback
 Requires at least: 5.0
 Requires PHP: 7.4
-Tested up to: 6.7
-Stable tag: 5.4.10.2
+Tested up to: 6.9
+Stable tag: 5.4.10.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,8 +95,13 @@ The source of this plugin is located at [Github](https://github.com/kamalkhan/kk
 
 == Changelog ==
 
+= 5.4.10.3 =
+* Upgraded freemiums SDK
+
 = 5.4.10.2 =
 * Fixed security issue where any shortcode could be parsed.
+
+See the [changelog file](https://plugins.svn.wordpress.org/kk-star-ratings/trunk/changelog.txt) for complete change log information.
 
 == Upgrade Notice ==
 
